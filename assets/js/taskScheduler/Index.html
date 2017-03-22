@@ -1,0 +1,71 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+
+    <style>
+        html
+        {
+            width: 100%;
+            height: 100%;
+        }
+
+        body
+        {
+            width: 100%;
+            height: 100%;
+        }
+
+        .container 
+        {
+            width: 90%;
+            height: 80%;
+            position: absolute;
+            top: 30%;
+            left: 10%;
+            margin-top: -10%;
+            margin-left: -5%;
+        }
+    </style>
+
+    <!-- Object Model -->
+    <script type="text/javascript" src="./utils.js"></script>
+    <script type="text/javascript" src="./baseContainer.js"></script>
+    <script type="text/javascript" src="./minuteContainer.js"></script>
+    <script type="text/javascript" src="./hourContainer.js"></script>
+    <script type="text/javascript" src="./dayContainer.js"></script>
+    <script type="text/javascript" src="./monthContainer.js"></script>
+    <script type="text/javascript" src="./weekContainer.js"></script>
+    <script type="text/javascript" src="./scheduler.js"></script>
+
+    <script type="text/javascript" src="./task.js"></script>
+    <script type="text/javascript" src="./taskManager.js"></script>
+
+    <!-- Test Cases -->
+    <script type="text/javascript" src="./schedulerTest.js"></script>
+
+    <title>Scheduler and Task Manager test cases</title>
+</head>
+<body>
+    <div style="display: table; table-layout: fixed;" class="container">
+        <div style="display: table-row; height: 100%; width: 100%;">
+            <div style="display: table-cell; height: 100%; width: 50%;">
+                <span>List of scheduled tasks</span>
+                <textarea id="scheduledId" style="height: 100%; width: 100%; overflow: scroll;"></textarea>
+            </div>
+            <div style="display: table-cell; height: 100%; width: 50%;">
+                <span>Completed tasks</span>
+                <textarea id="completedId" style="height: 100%; width: 100%; overflow: scroll;"></textarea>
+            </div>
+        </div>
+    </div>
+
+    <div style="height: 40px; display: table-cell;">
+        <span>Type scheduled task id here</span>
+        <input id="textId" type="text" />
+        <input id="buttonId" type="button" value="Remove Task" />
+    </div>
+
+</body>
+</html>
